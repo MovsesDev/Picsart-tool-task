@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picsart Tool</title>
+    <link rel="icon" type="image/x-icon" href="./public/icon.png" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="color-dropper__wrapper">
+      <button class="color-dropper__button">
+        <img
+          class="color-dropper__icon"
+          src="src/assets/icons/color-picker.svg"
+        />
+      </button>
+      <div class="color-hex-wrapper">
+        <p class="color-dropper-hex">Click on canvas to copy a color</p>
+        <button id="copy-btn">
+          <img src="src/assets/icons/copy-regular.svg" alt="copy" />
+        </button>
+      </div>
+      <div class="upload-image__wrapper">
+        <p class="upload-image__text">Change canvas</p>
+        <label class="upload-image__label">
+          <input type="file" class="upload-image__input" />
+          <img
+            class="upload-image__icon"
+            src="src/assets/icons/upload-image.svg"
+          />
+        </label>
+      </div>
+    </div>
+    <div id="snackbar-container"></div>
+    <div class="canvas__wrapper">
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="src/main.ts" type="module"></script>
+  </body>
+</html>
